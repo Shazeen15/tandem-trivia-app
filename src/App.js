@@ -20,6 +20,7 @@ function App() {
     if(correct) {
       setScore(score + 1);
     }
+    //add event listener to my buttons
 
     // const next = document.querySelector('div.next');
     // next.classList.toggle('hide');

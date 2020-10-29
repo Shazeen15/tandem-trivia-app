@@ -15,15 +15,12 @@ function App() {
   //holds the score
   const [score, setScore] = useState(0);
 
-  //continues to the next question
+  //handles the scores
   const buttonChange = (correct) => {
     if(correct) {
       setScore(score + 1);
     }
-    //add event listener to my buttons
-
-    // const next = document.querySelector('div.next');
-    // next.classList.toggle('hide');
+    
   }
 
   //retry btn
@@ -64,11 +61,11 @@ function App() {
             <div className='btn-container'>
               {trivia[currentQuest].answers.map((a) => {
                 // console.log(a.correct)
-              return <button onClick={() => buttonChange(a.correct)}>{a.answer}</button>
+              return <button className='answer-btn' onClick={() => buttonChange(a.correct), 'this.disabled = true;'}>{a.answer}</button>
                 })}
               {/* {trivia[currentQuest].answers.map((a) => {
                 // console.log(a.correct)
-                  return <label htmlFor="answer"><input id='answer' name='answer' type="radio"/>{a.answer}</label>
+                  return <label htmlFor="answer"><input onChange={() => buttonChange(a.correct)} id='answer' name='answer' type="radio"/>{a.answer}</label>
                 })} */}
               {/* {trivia[currentQuest].answers.map((a) => {
                 console.log(a)

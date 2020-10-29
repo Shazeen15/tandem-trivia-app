@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import './App.css';
 import {triviaData} from './data';
-// import SubmitPage from './SubmitPage';
 
 function App() {
 
@@ -19,8 +18,17 @@ function App() {
   const buttonChange = (correct) => {
     if(correct) {
       setScore(score + 1);
+      document.querySelectorAll('.answer-btn').forEach(item => {
+        item.addEventListener('click', event => {
+          item.classList.add('right-answer')
+        })
+      })
     }
-    
+    //color the button green if the correct answer was clicked
+    //color the button red if the wrong answer was clicked
+
+    //disable buttons after the user has clicked once
+
   }
 
   //retry btn
@@ -61,7 +69,7 @@ function App() {
             <div className='btn-container'>
               {trivia[currentQuest].answers.map((a) => {
                 // console.log(a.correct)
-              return <button className='answer-btn' onClick={() => buttonChange(a.correct), 'this.disabled = true;'}>{a.answer}</button>
+              return <button type='submit' className='answer-btn' onClick={() => buttonChange(a.correct)}>{a.answer}</button>
                 })}
               {/* {trivia[currentQuest].answers.map((a) => {
                 // console.log(a.correct)
@@ -73,7 +81,7 @@ function App() {
                 })} */}
             </div>
             <div className='next'>
-                <button onClick={nextBtn}>Next</button>
+                <button type='submit' className='next-btn' onClick={nextBtn}>Next</button>
             </div>
           </div>
         </div>

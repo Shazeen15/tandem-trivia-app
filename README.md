@@ -4,8 +4,7 @@ This project uses Javascript and React.
 
 ## How to Use the App
 [Load the site.](https://tandem-trivia.herokuapp.com/)
-
- The first thing that will show is the first question.
+The first thing that will show is the first question.
 I am planning on adding a start button as the innital page instead of the first questions later on 
 
 ### Features I am having difficulty with

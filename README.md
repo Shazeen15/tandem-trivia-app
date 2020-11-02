@@ -14,7 +14,7 @@ This project uses Javascript and React.
 - [ ] When the user clicks on the right answer. I want my button to turn green.
 - [x] Adding a next Button
 - [ ] Add a start Button
-- [ ] Add a retry Button
+- [x] Add a retry Button
 - [ ] I want my next button to hide until the user clicks on an answer and then dissappears when the next question appears.
 - [ ] Displaying the correct answer when the user click on the answer buttons
 - [ ] My button wont highligh until the second click

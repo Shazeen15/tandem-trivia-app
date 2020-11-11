@@ -3,7 +3,7 @@
 This project uses Javascript and React.
 
 ## How to Use the App
-- [Load the site.](https://tandem-trivia.herokuapp.com/)
+- [Trivia App.](https://tandem-trivia.herokuapp.com/)
 - The first thing that will show is the first question.
 - You can start by choosing the answer and click next, which will tak you to the next question.
 - When you are done with all the questions you be given your score at the end.
